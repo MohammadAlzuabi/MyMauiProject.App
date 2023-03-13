@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiProject.Views.LoginPage"
+             BackgroundColor="#154360"
+             Title="LoginPage">
+    <VerticalStackLayout>
+        <StackLayout Margin="100" HorizontalOptions="Fill">
+
+            <StackLayout Padding="50">
+
+                <Image
+                    Source="loggin.png"
+                    HeightRequest="100"
+                    BackgroundColor="#154360"
+                    WidthRequest="150"/>
+
+                <Entry         
+                    BackgroundColor="#154360"
+                    x:Name="txtUserName"
+                    FontSize="17"
+                    Placeholder="Username"                              
+                    TextColor="Wheat"
+                    PlaceholderColor="Wheat"/>
+
+                <Entry                    
+                    BackgroundColor="#154360"
+                    x:Name="txtPassword" 
+                    FontSize="17"
+                    Placeholder="Password"
+                    PlaceholderColor="Wheat"
+                    TextColor="Wheat"/>
+
+                <Button 
+                    Text="Logga in"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    BorderColor="Wheat"
+                    CornerRadius="50"
+                    BorderWidth="1"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Clicked="LoginClicked"
+                    VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

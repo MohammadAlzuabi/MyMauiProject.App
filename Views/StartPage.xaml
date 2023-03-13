@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiProject.Views.StartPage"
+             BackgroundColor="#154360"
+             Title="StartPage">
+    <VerticalStackLayout>
+        <StackLayout>
+            <StackLayout Margin="100">
+
+                <Image
+                    Source="titleskiing.png"
+                    HeightRequest="300"
+                    WidthRequest="500"
+                    />
+                <Button
+                    Text="Alla sport"
+                    Clicked="OnSportPageClicked"
+                    TextColor="Wheat"
+                    BackgroundColor="Black"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    HorizontalOptions="Center"/>
+
+                <Button      
+                    Text="Sparande statistk "
+                    Clicked="OnSavedSportFromDb"
+                    TextColor="Wheat"
+                    BackgroundColor="Black"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    HorizontalOptions="Center"/>
+
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

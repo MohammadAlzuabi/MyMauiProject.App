@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiProject.Views.CorssCountrySkiingPage"
+             BackgroundColor="#154360"
+             Title="CorssCountrySkiingPage">
+    <VerticalStackLayout>
+        <StackLayout Margin="10" HorizontalOptions="Fill">
+            <StackLayout>
+                <Image     
+                    Source="cross_skiing.jpg"
+                    Aspect="Fill"
+                    HeightRequest="200"
+                    WidthRequest="300"/>
+
+                <Button Text="Vissa sport detalier"
+                    BackgroundColor="Black"
+                    TextColor="Wheat"
+                    CornerRadius="50"
+                    BorderWidth="20"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    Clicked="GetCrossSnowSkiingDetails"
+                    HorizontalOptions="Center"/>
+
+                <Label      
+                    x:Name="Sportdetails"               
+                    BackgroundColor="Black"
+                    TextColor="Wheat"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+
+                <ImageButton                                           
+                    Clicked="OnStartStop"
+                    x:Name="startStopButton"
+                    Source="start.png"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    HeightRequest="10"/>
+
+                <Button
+                    Text="Avsulta ✖"
+                    BackgroundColor="Black"
+                    TextColor="Wheat"       
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Body"
+                    Clicked="OnClickedEndSport"
+                    HorizontalOptions="Center"/>
+
+                <Button 
+                    Text="Spara 💾↓"
+                    BackgroundColor="Black"
+                    TextColor="Wheat" 
+                    BindingContext="{x:Reference Result}"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Body"
+                    Clicked="OnClickedSaveToDb"
+                    HorizontalOptions="Center"/>
+
+                <Button
+                    Text="Tillbaka ❰❰"
+                    BackgroundColor="Black"
+                    TextColor="Wheat"       
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Body"
+                    Clicked="OnClickedBack"
+                    HorizontalOptions="Center"/>
+
+                <Label
+                    x:Name="Result"
+                    FontSize="18"
+                    FontAttributes="Bold"   
+                    HorizontalOptions="End"
+                    TextColor="Wheat"/>
+
+                <Label 
+                    x:Name="timeLabel"
+                    Text="00:00:00"
+                    FontSize="40"
+                    TextColor="Wheat"     
+                    HorizontalTextAlignment="End"/>
+
+                <Label
+                    x:Name="Stop"
+                    FontSize="18"
+                    FontAttributes="Bold" 
+                    TextColor="Black"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

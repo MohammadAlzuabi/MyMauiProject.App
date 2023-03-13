@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiProject.Views.ShowAllSport"
+             BackgroundColor="#154360"
+             Title="ShowAllSport">
+    <VerticalStackLayout>
+        <StackLayout>
+            <StackLayout Margin="50">
+
+                <Image 
+                    Source="skiing_og.jpg"
+                    HeightRequest="300"
+                    WidthRequest="600"/>
+                <Button
+                    Text="Water skiing"
+                    Clicked="OnClickedToWaterSkiiPage"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    HorizontalOptions="Center"/>
+                <Button      
+                    Text="Downhill snow skiing"
+                    Clicked="OnClickedToSnowSkiiPage"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    HorizontalOptions="Center"/>
+
+                <Button 
+                    Text="Cross country skiing"
+                    Clicked="OnClickedToCrossCountryskiiPage"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Micro"
+                    HorizontalOptions="Center"/>
+
+                <Button       
+                    Text="Tillbaka ❰❰"
+                    TextColor="White"
+                    BackgroundColor="Black"       
+                    CornerRadius="50"
+                    BorderWidth="10"
+                    FontAttributes="Bold"                    
+                    FontSize="Body"
+                    Clicked="OnClickedBack"
+                    HorizontalOptions="Center"/>
+
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
